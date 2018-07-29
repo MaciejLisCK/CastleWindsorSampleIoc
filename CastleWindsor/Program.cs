@@ -20,7 +20,7 @@ namespace CastleWindsor
             _container.Install(FromAssembly.This());
 
             var stringReverser = _container.Resolve<IStringReverser>();
-            var reversedString = stringReverser.Reverse("dupa");
+            var reversedString = stringReverser.Reverse("test");
 
             Console.WriteLine(reversedString);
             Console.ReadKey();
